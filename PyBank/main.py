@@ -53,7 +53,7 @@ with open(fname, newline='') as csvfile:
                 greatest_dec = delta
                 greatest_dec_date = month_str
 
-if month_cnt:
+if month_cnt > 1:
     avg_change = float(total_change) / (month_cnt - 1)
 
 # Generating report
