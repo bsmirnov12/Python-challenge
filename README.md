@@ -1,7 +1,7 @@
 # Python-challenge
 
 ## PyBank Result
-'''
+```
 Financial Analysis
 ----------------------------
 Total Months: 86
@@ -9,10 +9,10 @@ Total: $38,382,578
 Average  Change: $-2,315.12
 Greatest Increase in Profits: Feb-2012 ($ 1,926,159)
 Greatest Decrease in Profits: Sep-2013 ($-2,196,167)
-'''
+```
 
 ## PyPoll Result
-'''
+```
 Election Results
 -----------------------------------
 Total Votes: 3,521,001
@@ -24,4 +24,4 @@ Total Votes: 3,521,001
 -----------------------------------
 Winner: Khan
 -----------------------------------
-'''
+```
