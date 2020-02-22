@@ -5,6 +5,12 @@
 import os
 import csv
 
+# Debugging: determine if we must run the script in debug mode, i.e. with sample data
+if ('DEBUG_MODE' in os.environ) and (os.environ['DEBUG_MODE'].upper() == 'TRUE'):
+    debug_mode = True
+else:
+    debug_mode = False
+
 # Initializing stats variables
 
 total_votes = 0 # total number of votes
@@ -15,15 +21,12 @@ candidates = {} # every candidate is represented as a pair {candidate name: vote
 def votes(name):
     return candidates[name]
 
-# Debugging
-debug_mode = False # If True, use reduced sample dataset. If False, use full data set
+# Reading CSV file
 
 if debug_mode:
     src_fname = "election_data_sample.csv"
 else:
     src_fname = "election_data.csv"
-
-# Reading CSV file
 
 fname = os.path.join("Resources", src_fname)
 
