@@ -11,6 +11,14 @@ if ('DEBUG_MODE' in os.environ) and (os.environ['DEBUG_MODE'].upper() == 'TRUE')
 else:
     debug_mode = False
 
+# Instrcutor Notes
+# A simpler approach is to set a default when
+# no envirnonment variable exists
+#
+# eg.
+# debug_mode = os.getenv('DEBUG_MODE', 'False')
+# debug_mode = eval(debug_mode.title())
+
 # Initializing stats variables
 
 total_votes = 0 # total number of votes
